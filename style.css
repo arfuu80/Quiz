@@ -1,0 +1,233 @@
+
+* { 
+	font-family: Georgia, Times, "Times New Roman", serif; 
+} 
+
+body {
+	height: 100vh;
+	/* width: 100%; */
+    background-image: url("/image2.jpg") !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.quiz, 
+.scores { 
+	/* margin: 50px auto 0 auto;  */
+	max-width: 400px; 
+} 
+
+#top { 
+	color:black; 
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 50px;
+	position: absolute;
+/* padding-top: 40%; */
+margin-top: 8%;
+
+
+
+} 
+
+h1{
+	color: black;
+	/* width: 120%; */
+}
+.containerNew { 
+	/* border: 5px solid white;  */
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	height: 560px; 
+	width: 80%; 
+	transform: translate(-50%, -50%); 
+	padding: 100px; 
+    /* box-shadow: 21px 21px 20px black; */
+	/* border: 4px solid  rgb(31, 30, 30); */
+	animation-name: box;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	/* background-color: rgb(31, 30, 30); */
+	border-radius: 50px;
+	
+} 
+#start{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: 35%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	background-color: #4B0082;
+}
+#start:hover{
+	background-color: rgb(10, 103, 243);
+}
+
+
+
+h2{
+	color:black;
+}
+
+p { 
+	/* margin: 5px 15px;  */
+	color: black;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+	width: 160%;
+	/* position: relative; */
+padding-top: 110px;
+margin-left: -3%;
+	
+} 
+.timer{
+	float: right;
+}
+.landing { 
+	text-align: center; 
+	margin-top: -5%;
+} 
+
+.scoresHeader { 
+	position: absolute; 
+	top: 15px; 
+	left: 15px; 
+
+} 
+
+
+
+button { 
+	display: inline-block; 
+	margin: 10px; 
+	cursor: pointer; 
+	color: white; 
+	background-color: #4B0082;
+    font-size: 20px; 
+	border-radius: 5px; 
+	border: 0; 
+	padding: 15px;
+	/* box-shadow: 10px 18px 9px black; */
+	animation-name: b;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+/* @keyframes b{
+	50%{
+		
+	box-shadow: 10px 18px 9px  rgb(31, 30, 30);
+	}
+} */
+
+button:hover { 
+	background-color: rgb(10, 103, 243);
+	
+} 
+
+.options button { 
+	display: block; 
+} 
+
+input[type="text"] { 
+	font-size: 100%; 
+} 
+
+.hide { 
+	display: none; 
+} 
+
+.feedback { 
+	font-style: bold; 
+	font-size: 120%; 
+	margin-top: 20px; 
+	padding-top: 15px; 
+	color: #fff; 
+	border-top: 2px solid #4B0082; 
+} 
+
+ol { 
+	padding-left: 15px; 
+	max-height: 600px; 
+	overflow: auto; 
+} 
+
+li { 
+	padding: 5px; 
+	list-style: decimal inside none; 
+} 
+
+li:nth-child(odd) { 
+	background-color: #dfdae7; 
+} 
+
+
+
+
+
+img{
+	height: 160px;
+	animation-name: i;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes i{
+50%{
+	/* background-color: black; */
+	border-radius: 50px;
+}
+}
+
+@media screen and (max-width: 768px) { 
+	.containerNew { 
+		width: 80%; 
+	} 
+} 
+
+@media screen and (max-width: 575px) { 
+	.containerNew { 
+		height: 580px;
+		width: 90%; 
+		margin-top: 12%;
+	} 
+	h1 {
+		color: black;
+		width: 103%;
+	}
+
+	.quiz, 
+	.scores { 
+		max-width: 90%; 
+	} 
+	h2 {
+		margin-left: 5%;
+	}
+	#top {
+		color: black;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 39px;
+		position: absolute;
+		/* padding-top: 40%; */
+		margin-top: 8%;
+		margin-left: -22%;
+	}
+	p {
+		/* margin: 5px 15px; */
+		color: black;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 20px;
+		width: 100%;
+		/* position: relative; */
+		padding-top: 53px;
+		margin-left: -3%;
+	}
+	#start {
+		padding-left: 50px;
+		padding-right: 45px;
+		margin-left: 25%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: white;
+		background-color: #4B0082;
+	}
+}
